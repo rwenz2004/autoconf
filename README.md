@@ -9,15 +9,15 @@
 ```
 2. 在linglong.yaml的[build]下加入如下内容:
 ``` bash
-  cd /project/source/autoconf.git
+  cd /project/linglong/sources/autoconf.git
   mkdir -p ${PREFIX}/utils
   cd m4-install
-  ./configure --prefix=${PREFIX}/utils/
+  ./configure --prefix=${PREFIX}/utils
   make
   make install
   export PATH=${PREFIX}/utils/bin:$PATH
   cd ..
-  ./configure --prefix=${PREFIX}/utils/
+  ./configure --prefix=${PREFIX}/utils
   make
   make install
 ```
